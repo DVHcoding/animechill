@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime-Chill</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./frontend/assets/imgs/favicon.ico" type="image/x-icon">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Autour+One&family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- Link css -->
+    <link rel="stylesheet" href="./frontend/assets/css/style.css">
+    <!-- Slick slider-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="top">
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="./frontend/assets/imgs/logo.svg" alt="logo" class="logo-img">
+            </a>
+
+            <button class="menu-open" id="menu-open">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <div class="navbar-list">
+                    <ul class="navbar-item">
+                        <div class="comic-list">
+                            <button id="danh-sach">
+                                <img src="./frontend/assets/imgs/icons/menu-list.svg" alt="">
+                                <span>Danh Sách</span>
+                            </button>
+
+                            <a href="#" class="navbar-action">
+                                <button class="top-comic-icon">
+                                    <img src="./frontend/assets/imgs/icons/top-comic.svg" alt="">
+                                    <span>Truyện Hot</span>
+                                </button>
+                            </a>
+
+                            <div class="search">
+                                <input type="text" placeholder="Tìm tên truyện...">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <ul class="hot-comic-list" id="hot-comic-list">
+                            <li class="hot-comic-top">
+                                <a href="#" class="comic-link">Manga</a>
+                            </li>
+
+                            <div class="comic-box">
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Hành động</a>
+                                </li>
+
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Fantasy</a>
+                                </li>
+
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Phiêu lưu</a>
+                                </li>
+
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Kiếm thuật</a>
+                                </li>
+
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Siêu anh hùng</a>
+                                </li>
+
+                                <li class="hot-comic-item">
+                                    <a href="#" class="comic-link">Isekai</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="user">
+                <ion-icon name="person-circle-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="article">
+            <div class="main-top">
+                <!-- TOP VIEW -->
+                <div class="top-view content" id="top-view">
+                    <div class="container">
+                        <h3 class="top-view_title">
+                            Top view
+                        </h3>
+                        <div class="top-view_slider">
+                            <a class="slider-img">
+                                <img src="./frontend/assets/imgs/comic-1.jpg" alt="">
+                                <span class="top-view_view">
+                                    <span>62 lượt xem</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                                <h4 class="top-view_subtitle">Miss Kobayashi's dragon maid</h4>
+                            </a>
+
+                            <a class="slider-img">
+                                <img src="./frontend/assets/imgs/comic-2.jpg" alt="">
+                                <span class="top-view_view">
+                                    <span>62 lượt xem</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                                <h4 class="top-view_subtitle">Yōkoso Jitsuryoku Shijō Shugi no Kyōshitsu e</h4>
+                            </a>
+
+                            <a class="slider-img">
+                                <img src="./frontend/assets/imgs/comic-3.jpg" alt="">
+                                <span class="top-view_view">
+                                    <span>62 lượt xem</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                                <h4 class="top-view_subtitle">Re : zero</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW COMIC -->
+                <div class="new-comic content" id="new-comic">
+                    <div class="container">
+                        <h3 class="new-comic_title">Truyện Mới</h3>
+                        <ul class="new-comic_list">
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-4.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Youkoso</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-5.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Spy x Family</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-6.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Sword Art</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-7.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Sword Art</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-8.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Sword Art</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <li class="new-comic_item">
+                                <a href="#" class="new-comic_img">
+                                    <img src="./frontend/assets/imgs/comic-9.jpg" alt="">
+                                    <span class="new-comic_view">
+                                        <span>62 lượt xem</span>
+                                        <ion-icon name="eye-outline"></ion-icon>
+                                    </span>
+                                </a>
+                                <div class="new-comic_content">
+                                    <div class="new-comic_content-title">
+                                        <h3>Sword Art</h3>
+                                        <span class="new-comic_content-view">12 lượt đọc</span>
+                                    </div>
+
+                                    <ul class="chapter-list">
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link active">Chap mới nhất</a>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 4</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 3</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 2</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                        <li class="chapter-item">
+                                            <a href="#" class="chapter-link ">Chapter 1</a>
+                                            <span class="chapter-time">10/05/2023</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pagination-list">
+                    <button class="pagination-item prev">PREV</button>
+                    <button class="pagination-item">1</button>
+                    <button class="pagination-item">2</button>
+                    <button class="pagination-item">3</button>
+                    <button class="pagination-item">4</button>
+                    <button class="pagination-item">...</button>
+                    <button class="pagination-item next">NEXT</button>
+                </div>
+            </div>
+            <!-- SUCCESS COMIC -->
+            <div class="success-comic content" id="success-comic">
+                <div class="container">
+                    <h3 class="success-comic_title">Đã hoàn thành</h3>
+
+                    <ul class="success-comic_list has-scrollbar">
+                        <li class="success-comic_item">
+                            <a href="#" class="success-comic_link">
+                                <img src="./frontend/assets/imgs/comic-10.jpg" alt="">
+                                <span class="success-comic_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="success-comic_item">
+                            <a href="#" class="success-comic_link">
+                                <img src="./frontend/assets/imgs/comic-11.jpg" alt="">
+                                <span class="success-comic_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="success-comic_item">
+                            <a href="#" class="success-comic_link">
+                                <img src="./frontend/assets/imgs/comic-12.jpg" alt="">
+                                <span class="success-comic_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="success-comic_item">
+                            <a href="#" class="success-comic_link">
+                                <img src="./frontend/assets/imgs/comic-13.jpg" alt="">
+                                <span class="success-comic_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="success-comic_item">
+                            <a href="#" class="success-comic_link">
+                                <img src="./frontend/assets/imgs/comic-14.jpg" alt="">
+                                <span class="success-comic_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <!-- UPCOMING -->
+            <div class="upcoming content" id="upcoming">
+                <div class="container">
+                    <h3 class="upcoming_title">Đang cập nhật</h3>
+
+                    <ul class="upcoming-list">
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-15.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-16.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-17.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-18.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-19.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-20.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                        <li class="upcoming-item">
+                            <a href="#" class="upcoming_link">
+                                <img src="./frontend/assets/imgs/comic-21.jpg" alt="">
+                                <span class="upcoming_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- MANGA -->
+            <div class="manga content" id="manga">
+                <div class="container">
+                    <h3 class="manga_title">Truyện manga</h3>
+                    <ul class="manga-list">
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-22.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-23.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-24.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-25.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-26.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-27.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-28.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-29.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-30.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-31.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-32.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="manga-item">
+                            <a href="#" class="manga_link">
+                                <img src="./frontend/assets/imgs/comic-33.jpg" alt="">
+                                <span class="manga_view">
+                                    <span>62</span>
+                                    <ion-icon name="eye-outline"></ion-icon>
+                                </span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container content">
+            <div class="footer-top">
+                <div class="footer-top_media">
+                    <h4 class="media-title footer-title">Follow Us</h4>
+
+                    <div class="media-icon">
+                        <a href="https://www.facebook.com/profile.php?id=100044022424100">
+                            <ion-icon name="logo-facebook" style="color: blue;"></ion-icon>
+                        </a>
+                        <a href="https://www.youtube.com/@DVHcoding">
+                            <ion-icon name="logo-youtube" style="color: red;"></ion-icon>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hung-do-a2b688293/">
+                            <ion-icon name="logo-linkedin" style="color: rgb(0, 221, 255);"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-top_action">
+                    <h4 class="action-title footer-title">Useful Link</h4>
+
+                    <div class="action-link">
+                        <a href="#top-view">Top view</a>
+                        <a href="#new-comic">Truyện Mới</a>
+                        <a href="#success-comic">Truyện đã hoàn thành</a>
+                        <a href="#upcoming">Truyện đang cập nhật</a>
+                        <a href="#manga">Truyện Manga</a>
+                    </div>
+                </div>
+
+                <div class="footer-top_subscribe">
+                    <h4 class="subscribe_title footer-title">Subscribe</h4>
+
+                    <form action="" class="subscribe-input">
+                        <input type="text" placeholder="Email Address">
+                        <ion-icon name="send"></ion-icon>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">
+                Copyright &copy; 2023, All right Reserved
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=100044022424100">DvhCoding</a>
+        </div>
+    </footer>
+
+    <!-- SCROLL-TOP -->
+    <a href="#top" class="scroll-top" data-scroll-top>
+        <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            /*-----------------------------------*\
+             * # UP COMING
+            \*-----------------------------------*/
+            $('.upcoming-list').slick({
+                rows: 1,
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                pauseOnFocus: false,
+                prevArrow: `<button type='button' class='slick-prev pull-left'><ion-icon name="caret-back-outline"></ion-icon></button>`,
+                nextArrow: `<button type='button' class='slick-next pull-right'><ion-icon name="caret-forward-outline"></ion-icon></button>`,
+
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 5,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 2,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 2
+                        }
+                    }
+                ]
+            })
+
+            /*-----------------------------------*\
+             * # MANGA 
+            \*-----------------------------------*/
+            $('.manga-list').slick({
+                rows: 2,
+                dots: true,
+                infinite: true,
+                speed: 800,
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 1500,
+                pauseOnFocus: false,
+                prevArrow: `<button type='button' class='slick-prev pull-left'><ion-icon name="caret-back-outline"></ion-icon></button>`,
+                nextArrow: `<button type='button' class='slick-next pull-right'><ion-icon name="caret-forward-outline"></ion-icon></button>`,
+
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 3,
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 4,
+                            slidesToScroll: 1,
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            rows: 2,
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            })
+
+        });
+    </script>
+
+    <!-- javascript -->
+    <script src="./frontend/assets/js/script.js"></script>
+    <!-- ion-icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Slick slider-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
